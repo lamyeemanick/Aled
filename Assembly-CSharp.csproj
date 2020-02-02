@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\dash.cs" />
      <Compile Include="Assets\EndlessCaveAmbience\demos\demo scripts\DebugConsole.cs" />
      <Compile Include="Assets\EndlessCaveAmbience\demos\demo scripts\MixControl.cs" />
      <Compile Include="Assets\EndlessCaveAmbience\demos\demo scripts\RandomMusicDemo.cs" />
@@ -75,18 +76,36 @@
      <Compile Include="Assets\Game Jam Template\Scripts\Menu\SetAudioLevels.cs" />
      <Compile Include="Assets\Game Jam Template\Scripts\Menu\ShowPanels.cs" />
      <Compile Include="Assets\Game Jam Template\Scripts\Menu\StartOptions.cs" />
+     <Compile Include="Assets\GameManager.cs" />
      <Compile Include="Assets\PlayerHub.cs" />
+     <Compile Include="Assets\Scripts\AddBonus.cs" />
+     <Compile Include="Assets\Scripts\BasicEnemy.cs" />
      <Compile Include="Assets\Scripts\BoardManager.cs" />
+     <Compile Include="Assets\Scripts\Bonus.cs" />
+     <Compile Include="Assets\Scripts\button1.cs" />
+     <Compile Include="Assets\Scripts\Cooldown.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\EnemyTerritory.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GlitchEffect.cs" />
+     <Compile Include="Assets\Scripts\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Hub.cs" />
+     <Compile Include="Assets\Scripts\KeyPressed.cs" />
      <Compile Include="Assets\Scripts\Loader.cs" />
      <Compile Include="Assets\Scripts\MovingObject.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\PlayerComboHit.cs" />
      <Compile Include="Assets\Scripts\PlayerMovements.cs" />
+     <Compile Include="Assets\Scripts\SetCurrentHealth.cs" />
      <Compile Include="Assets\Scripts\SoundManager.cs" />
+     <Compile Include="Assets\Scripts\Velocity.cs" />
      <Compile Include="Assets\Scripts\Wall.cs" />
+     <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\AsteroidController.cs" />
+     <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\HealthPickupController.cs" />
+     <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\Simple Health Bar\Scripts\SimpleHealthBar.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\TutorialInfo.cs" />
      <None Include="Assets\TutorialInfo\Fonts\LICENSE.txt" />
