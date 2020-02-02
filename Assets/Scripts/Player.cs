@@ -131,7 +131,7 @@ namespace Completed
 		protected override void AttemptMove <T> (int xDir, int yDir)
 		{
 			//Every time player moves, subtract from food points total.
-			food--;
+			//food--;
 			
 			//Update food text display to reflect current score.
 			foodText.text = "Golds: " + food;

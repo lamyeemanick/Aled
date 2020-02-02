@@ -11,6 +11,9 @@ namespace Completed
 		public float lowPitchRange = .95f;				//The lowest a sound effect will be randomly pitched.
 		public float highPitchRange = 1.05f;			//The highest a sound effect will be randomly pitched.
 		
+		public AudioClip almostNone;
+		public AudioClip glitchedMusic;
+		public AudioClip endedMusic;
 		
 		void Awake ()
 		{
@@ -27,6 +30,20 @@ namespace Completed
 			DontDestroyOnLoad (gameObject);
 		}
 		
+
+		public void ChangeMusic(int level)
+		{
+			if (level == 1) {
+				musicSource.clip = almostNone;
+				musicSource.Play();
+			} else if (level == 3) {
+				musicSource.clip = glitchedMusic;
+				musicSource.Play();
+			} else if (level == 7) {
+				musicSource.clip = endedMusic;
+				musicSource.Play();
+			}
+		}
 		
 		//Used to play single sound clips.
 		public void PlaySingle(AudioClip clip)

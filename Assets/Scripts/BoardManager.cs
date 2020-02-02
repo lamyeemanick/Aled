@@ -40,7 +40,7 @@ namespace Completed
 		public GameObject[] DownOuterWallTiles;								//Array of outer tile prefabs.
 		public GameObject[] SideOuterWallTiles;								//Array of outer tile prefabs.
 		public GameObject[] CornerOuterWallTiles;								//Array of outer tile prefabs.
-		
+
 		private Transform boardHolder;									//A variable to store a reference to the transform of our Board object.
 		private List <Vector3> gridPositions = new List <Vector3> ();	//A list of possible locations to place tiles.
 		
@@ -148,6 +148,12 @@ namespace Completed
 		//SetupScene initializes our level and calls the previous functions to lay out the game board
 		public void SetupScene (int level)
 		{
+			if (SoundManager.instance != null) {
+				SoundManager.instance.ChangeMusic(level);
+				GlitchEffect glitchEffects = GameObject.Find("Main Camera").GetComponent<GlitchEffect> ();
+				glitchEffects.changeGlitches(level);
+			}
+
 			//Creates the outer walls and floor.
 			BoardSetup ();
 			
